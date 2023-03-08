@@ -5,9 +5,6 @@ import DALLE from './components/DALLE/DALLE';
 import ChatGPT from './components/ChatGPT/ChatGPT';
 import Home from './components/Home';
 
-console.log(process.env);
-
-
 function App() {
   return (
     <div className="App">
