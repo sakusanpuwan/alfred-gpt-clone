@@ -1,0 +1,34 @@
+.DALLE-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    height: 20px;
+    margin: 20px;
+    width: 300px;
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(92, 194, 242);
+
+}
+
+.button{
+    background-color: rgb(92, 194, 242);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.result-image{
+    margin-top: 20px;
+    width: 350px;
+}
