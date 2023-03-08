@@ -35,13 +35,13 @@ const DALLE = () => {
 
   return (
     <div className='DALLE-Container'>
-      <h3>What would you like me to paint? 🎨</h3>
+      <h4>What would you like me to paint? 🎨</h4>
       <input 
         className='input' 
         onChange={(event) => setPrompt(event.target.value)}
         placeholder = "Type here..."
       />
-      <button onClick={generateImage} className='button'>Click to paint</button>
+      <button onClick={generateImage} className='button'>Click to paint!</button>
       {result.length > 0 ? <img src={result} alt='result image' className='result-image' /> : <></> }
       
     </div>

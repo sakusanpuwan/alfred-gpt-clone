@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
 
           <div className='NavBar'>
-            <Link to='/alfred/dalle'><a>Alfred, paint me this picture....</a></Link>
+            <Link to='/alfred/dalle'><a>Alfred, paint me this picture...</a></Link>
             <Link to='/alfred'><img src={Logo} height="100px"/></Link>
             <Link to='/alfred/chat'><a>Alfred, answer me this question...</a></Link>
           </div>

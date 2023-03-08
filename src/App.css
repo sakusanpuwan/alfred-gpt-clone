@@ -8,12 +8,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  margin-left: 20px;
+  font-weight: bold;
 }
 
 .NavBar > a:link {
   padding: 20px;
-  color: rgb(0, 59, 0);
+  color: white;
   text-decoration: none;
   
 
@@ -21,19 +22,19 @@
 
 .NavBar > a:visited{
   text-decoration: none;
-  color: rgb(0, 59, 0);
+  color: white;
   text-decoration: none;
 
 }
 
 .NavBar > a:hover {
-  color: rgb(76, 1, 4);
-  text-decoration: underline;
+  color: rgb(0, 143, 17);
+  text-decoration: none;
 
 }
 
 .NavBar > a:active {
-  color: rgb(76, 1, 4);
+  color: rgb(0, 143, 17);
 }
 
 .ChatGPT-Container{
