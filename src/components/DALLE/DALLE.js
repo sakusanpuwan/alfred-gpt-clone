@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import './DALLE.css'
 const { Configuration, OpenAIApi } = require("openai");
 
-
-
-
 const DALLE = () => {
 
   const [prompt,setPrompt] = useState("");

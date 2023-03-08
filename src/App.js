@@ -11,9 +11,9 @@ function App() {
       <BrowserRouter>
 
           <div className='NavBar'>
-            <h3><Link to='/alfred/dalle'>Alfred, paint me a picture....</Link></h3>
+            <Link to='/alfred/dalle'><a>Alfred, paint me this picture....</a></Link>
             <Link to='/alfred'><img src={Logo} height="100px"/></Link>
-            <h3><Link to='/alfred/chat'>Alfred, answer this question...</Link></h3>
+            <Link to='/alfred/chat'><a>Alfred, answer me this question...</a></Link>
           </div>
 
 
@@ -23,7 +23,7 @@ function App() {
           <Route path='/alfred/chat' element={<ChatGPT/>}/>
         </Routes>
 
-        </BrowserRouter>
+      </BrowserRouter>
       
     </div>
   );

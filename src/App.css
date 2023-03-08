@@ -1,5 +1,5 @@
 .App{
-  background-color: rgb(25, 27, 169);
+  background-color: rgb(24, 26, 27);
   min-height: 100vh;
 }
 
@@ -9,6 +9,31 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.NavBar > a:link {
+  padding: 20px;
+  color: rgb(0, 59, 0);
+  text-decoration: none;
+  
+
+}
+
+.NavBar > a:visited{
+  text-decoration: none;
+  color: rgb(0, 59, 0);
+  text-decoration: none;
+
+}
+
+.NavBar > a:hover {
+  color: rgb(76, 1, 4);
+  text-decoration: underline;
+
+}
+
+.NavBar > a:active {
+  color: rgb(76, 1, 4);
 }
 
 .ChatGPT-Container{
