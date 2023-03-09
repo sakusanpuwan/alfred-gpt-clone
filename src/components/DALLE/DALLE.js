@@ -5,7 +5,8 @@ const { Configuration, OpenAIApi } = require("openai");
 const DALLE = () => {
 
   const [prompt,setPrompt] = useState("");
-  const [result,setResult] = useState("")
+  const [result,setResult] = useState([]);
+  const [checkURL,setCheckURL] = useState("");
 
   const configuration = new Configuration({
     apiKey: process.env.REACT_APP_API_KEY,
@@ -18,18 +19,14 @@ const DALLE = () => {
     try {
       const response = await openai.createImage({
         prompt: prompt,
-        n:1,
-        size:"1024x1024"
+        n:4,
+        size:"512x512"
       });
-
-      const image_url = response.data.data[0].url;
-      console.log(image_url);
-      setResult(image_url)
-
+      setResult(response.data.data)
+      setCheckURL(response.data.data[0].url)
     } catch (error) {
       console.log(error);
     }
-
   }
 
 
@@ -42,8 +39,9 @@ const DALLE = () => {
         placeholder = "Type here..."
       />
       <button onClick={generateImage} className='button'>Click to paint!</button>
-      {result.length > 0 ? <img src={result} alt='result image' className='result-image' /> : <></> }
-      
+      <div className='image-container'>
+        {checkURL.length > 0 ? result.map((image) => <img src={image.url} alt={prompt} className='result-image' />) : <></> } 
+      </div>
     </div>
   )
 }

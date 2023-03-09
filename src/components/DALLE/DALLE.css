@@ -17,7 +17,13 @@
     border-radius: 4px;
     box-sizing: border-box;
     background-color: rgb(59, 59, 59);
+    color: antiquewhite;
+    font-weight: bold;
+}
 
+.input:focus{
+    border: 2px solid rgb(0, 143, 17) ;
+    border-color: rgb(0, 143, 17);
 }
 
 .button{
@@ -43,6 +49,12 @@
 
 .result-image{
     margin-top: 20px;
-    width: 350px;
+    width: 250px;
     padding-bottom: 30px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.image-container{
+    margin-top: 50px;
 }
