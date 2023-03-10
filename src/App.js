@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Logo from './assets/Logo.png'
 import DALLE from './components/DALLE/DALLE';
 import ChatGPT from './components/ChatGPT/ChatGPT';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 
 function App() {
   return (
